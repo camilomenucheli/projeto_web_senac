@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_WEB357FRAMEWORK</name>
+	<author>Web357 (Yiannis Christodoulou)</author>
+	<version>1.3.9</version>
+	<description></description>
+	<creationDate>04 Oct 2016</creationDate>
+	<copyright>Copyright (C) 2016 - Web357. All rights reserved.</copyright>
+	<license>GNU/GPLv3, http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>support@web357.eu</authorEmail>
+	<authorUrl>https://www.web357.eu/</authorUrl>
+
+	<files>
+		<folder>assets</folder>
+		<folder>elements</folder>
+		<filename plugin="web357framework">web357framework.php</filename>
+		<filename plugin="web357framework">web357framework.class.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_web357framework.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_web357framework.sys.ini</language>
+	</languages>
+	
+	<scriptfile>web357framework.script.php</scriptfile>
+
+	<config>
+		<fields name="params">
+			
+			<fieldset name="about" label="W357FRM_HEADER_ABOUT_WEB357">
+				
+				<!-- BEGIN: About Web357 -->
+				<field type="header" label="W357FRM_HEADER_ABOUT_WEB357" />
+				<field name="about" id="about" type="about" label="" addfieldpath="/plugins/system/web357framework/elements" />
+				<!-- END: About Web357 -->
+				
+			</fieldset>
+
+			<fieldset name="basic" label="Web357 Framework - Parameters">
+
+				<!-- BEGIN: Version Check -->
+				<field type="header" label="W357FRM_HEADER_VERSION_CHECK" />
+				<field name="info" id="info" type="info" extension_type="plugin" extension_name="web357framework" real_name="PLG_SYSTEM_WEB357FRAMEWORK" plugin_type="system" label="" addfieldpath="/plugins/system/web357framework/elements" />
+				<!-- END: Version Check -->
+			</fieldset>
+
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Web357 Framework"><![CDATA[http://updates.web357.eu/web357framework/web357framework.xml]]></server>
+	</updateservers>
+		
+</extension>

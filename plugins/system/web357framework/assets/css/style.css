@@ -1,0 +1,18 @@
+/* ======================================================
+# Web357 Framework - Joomla! System Plugin v1.3.9
+# -------------------------------------------------------
+# For Joomla! 3.0
+# Author: Yiannis Christodoulou (yiannis@web357.eu)
+# Copyright (©) 2009-2017 Web357. All rights reserved.
+# License: GNU/GPLv3, http://www.gnu.org/licenses/gpl-3.0.html
+# Website: https://www.web357.eu/
+# Support: support@web357.eu
+# Last modified: 01 Mar 2017, 07:29:16
+========================================================= */
+
+.icon-monthlyarchive:before {
+	content: "\e242";
+}
+.icon-vmsales:before {
+	content: "\e242";
+}

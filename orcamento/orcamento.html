@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+    </head>
+    <body>
+      <form class="formOrcamento col-md-12 col-xs-12" method="post" action="php/orcamento.php">
+          <div role="main">
+            <h3 class="tituloOrcamento"><b>Orçamento</b></h3>
+            <div style="clear: both"></div>
+            <div class="col-md-2">
+            <select name="tipo" class="form-control">
+              <option value="Casamento">Casamento</option>
+              <option value="Aniversario">Aniversário</option>
+              <option value="Outra">Outra</option>
+            </select> 
+            </div>
+            <div style="clear: both"></div>
+            <div style="clear: both"></div>
+            <div style="clear: both"></div>
+            <br><br>
+            <div class="col-md-6 col-xs-12">
+              <p class="tituloOrcamento "><b>Dados Pessoais</b></p>
+              <div style="clear: both"></div>
+              <div class="form-group">
+              <label for="lblNome">Primeiro Nome:</label>
+              <input type="Nome" class="form-control" id="inputNome" name="PNome" placeholder="João" required="required">
+              <label for="lblSobrenome">Ultimo Nome:</label>
+              <input type="Sobrenome" class="form-control" id="inputSobrenome" name="UNome" placeholder="Silva" required="required">
+              <label for="lblEmail">Seu E-mail:</label>
+              <input type="Email" class="form-control" id="inputEmail" name="Email" placeholder="joao@silva.com" required="required">
+              <label for="lblTelefone">Telefone:</label>
+              <input type="Telefone" class="form-control" id="inputTelefone" name="Telefone" placeholder="(xx)99999-9999" maxlength="11" required="required">
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="form-group">
+              <div style="clear: both"></div>
+              <p class="tituloOrcamento "><b>Dados sobre a festa</b></p>
+                <div class="col-md-12">
+                  <label for="lblNFesta">Nome da festa:</label>
+                  <input type="NFestas" class="form-control" id="NFestas" name="NFesta" required="required">
+                </div>
+                <div class="col-md-4">
+                  <label for="lblNConvidados">Nº Convidados:</label>
+                  <input type="NConvidados" class="form-control" id="NConvidados" placeholder="00" name="NConvidado" required="required">
+                </div>
+                <div class="col-md-4">
+                  <label for="lblNMesas">Nº Mesas:</label>
+                  <input type="NMesas" class="form-control" id="inputNMesas" placeholder="00" name="NMesa" required="required">
+                </div>
+                <div class="col-md-4">
+                  <label for="lblNBolos">Nº de Bolos:</label>
+                  <input type="NBolos" class="form-control" id="inputNBolos" placeholder="00" name="NBolo">
+                </div>
+                <div class="col-md-6">
+                  <label for="lblNDJ">Nome do DJ (Se não houver deixe em branco):</label>
+                  <input type="NDJ" class="form-control" id="inputNDJ" name="NDJ">
+                </div>
+                <div class="col-md-6">
+                  <label for="lblNBanda">Nome da Banda (Se não houver deixe em branco):</label>
+                  <input type="Banda" class="form-control" id="inputBanda" name="NBanda">
+                </div>
+                <div class="col-md-12">
+                  <label for="lblTema">Tema Expecífico (Se não houver deixe em branco):</label>
+                  <input type="Tema" class="form-control" id="inputTema" name="Tema">
+                </div>
+              </div>
+              <div style="clear: both"></div>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <p class="tituloOrcamento "><b>Onde será a festa?</b></p>
+              <div style="clear: both"></div>
+              <div class="form-group">
+                <label for="lblCepO">Cep:</label>
+                <input type="CepO" class="form-control" id="CepO" name="CepO" placeholder="00000-000" maxlength="9" onblur="pesquisacepO(this.value);">
+                <label for="lblRuaO">Rua:</label>
+                <input type="RuaO" class="form-control" id="RuaO" name="RuaO" placeholder="Rua">
+                <label for="lblBairroO">Bairro:</label>
+                <input type="BairroO" class="form-control" id="BairroO" name="BairroO" placeholder="Bairro">
+                <label for="lblCidadeO">Cidade:</label>
+                <input type="CidadeO" class="form-control" id="CidadeO" name="CidadeO" placeholder="Cidade">
+                <label for="lblUfO">Estado:</label>
+                <input type="UfO" class="form-control" id="UfO" name="UfO" placeholder="UF">
+                <label for="lblNumeroO">Número:</label>
+                <input type="NumeroO" class="form-control" id="NumeroO" name="NumeroO" placeholder="xxx">
+              </div>
+              <div style="clear: both"></div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group"><label for="mensagem" class="tituloOrcamento">Deixe uma mensagem: </label></div>
+              <div class="form-group col-md-12">
+                <textarea name="mensagem" cols="50%" rows="7" class="textbOrcamento"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="solicita btn btn-primary" value="SolicitarOrcamento" name="SolocitarOracamento" >Solicitar Oraçamento</button>
+            </div>
+          </div><!--fimConteudo-->
+        </form>
+  </body>
+        <!-- validador de cep -->
+        <script type="text/javascript" >
+    
+    function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('RuaO').value=("");
+            document.getElementById('BairroO').value=("");
+            document.getElementById('CidadeO').value=("");
+            document.getElementById('UfO').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('RuaO').value=(conteudo.logradouro);
+            document.getElementById('BairroO').value=(conteudo.bairro);
+            document.getElementById('CidadeO').value=(conteudo.localidade);
+            document.getElementById('UfO').value=(conteudo.uf);
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacepO(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('RuaO').value="...";
+                document.getElementById('BairroO').value="...";
+                document.getElementById('CidadeO').value="...";
+                document.getElementById('UfO').value="...";
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'http://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+    </script>
+</html>

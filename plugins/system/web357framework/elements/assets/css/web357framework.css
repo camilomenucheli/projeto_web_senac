@@ -1,0 +1,160 @@
+/* ======================================================
+# Web357 Framework - Joomla! System Plugin v1.3.9
+# -------------------------------------------------------
+# For Joomla! 3.0
+# Author: Yiannis Christodoulou (yiannis@web357.eu)
+# Copyright (©) 2009-2017 Web357. All rights reserved.
+# License: GNU/GPLv3, http://www.gnu.org/licenses/gpl-3.0.html
+# Website: https://www.web357.eu/
+# Support: support@web357.eu
+# Last modified: 01 Mar 2017, 07:29:16
+========================================================= */
+
+/************* Extension's Information *************/
+.w357 .btn {
+	margin-bottom: 5px;
+}
+.w357.com_vmsales .span9,
+.w357.com_monthlyarchive .span9 {	
+	margin-left: 0px;
+}
+.w357_ext_uptodate {
+	color: #34495e;
+	font-weight: 700;
+	font-size: 14px;
+	border: 2px solid #e1edea;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	background: #f1f9f7 url("../images/tick.png") no-repeat 15px 18px;
+	padding: 15px 15px 15px 50px;
+	line-height: 22px;
+	width: 565px;
+	clear: both;
+	text-align: left;
+}
+
+.w357_ext_uptodate.com_vmsales,
+.w357_ext_uptodate.com_monthlyarchive {
+	width: auto !important;
+}
+	
+.w357_ext_uptodate_j25 {
+	margin: 15px 0 50px 0;
+}
+.w357_ext_uptodate_j3x {
+}
+
+.w357_ext_notuptodate  {
+	color: #e74c3c;
+	font-weight: 700;
+	font-size: 14px;
+	margin: 15px 0 0 0;
+	border: 2px solid #e1edea;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	background: #f1f9f7 url("../images/alert.png") no-repeat 15px 18px;
+	padding: 15px 15px 15px 50px;
+	line-height: 22px;
+	text-align: left;
+}
+.w357_ext_notuptodate.com_vmsales,
+.w357_ext_notuptodate.com_monthlyarchive {
+	width: auto !important;
+}
+	
+.w357_ext_notuptodate a {
+    border-bottom: 1px dotted #999;
+    text-decoration: none;
+}
+.w357_ext_notuptodate a:hover {
+    border-bottom: 1px dotted orange;
+    text-decoration: none;
+}
+/************* Params *************/
+.free,
+.pro {
+	cursor: pointer;
+}
+.w357frm_param_header label {
+	font-weight: 700;
+	color: #fff;
+	clear: both;
+	display: block;
+	width: 600px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 10px 0 0 0;
+	padding: 15px 20px !important;
+	background: #0B55C4;
+	font-size: 17px;
+	border-width: 1px;
+	border-style: solid;
+}
+.w357frm_param_header.com_vmsales label,
+.w357frm_param_header.com_monthlyarchive label {
+	width: auto !important;
+}
+
+/* large header */
+.w357frm_param_header.w357_large_header label { }
+
+/* small header */
+.w357frm_param_header.w357_small_header label {
+	margin: 0 0 5px 0;
+	padding: 8px 20px !important;
+	background-color: transparent;
+	font-size: 14px;
+	color: #0B55C4;
+	border-color: #0B55C4;
+	border-style: dotted;
+}
+
+/* extra small header */
+.w357frm_param_header.w357_xsmall_header label {
+	margin: 0;
+    padding: 8px 0px !important;
+    font-size: 13px;
+    background: none;
+    color: #000;
+    font-weight: 700;
+    border: none;
+}
+
+/* for j25x */
+.w357frm_param_header.vj25x {
+	overflow: hidden;
+	clear: both;
+}
+
+/************* Item's Description *************/
+.w357_item_full_desc {
+	margin: 30px 0 0 10px;
+}
+
+/************* Responsive *************/
+@media(max-width:1100px){
+	.w357_ext_uptodate,
+	.w357frm_param_header label {
+		width: auto !important;
+	}
+}
+
+/************* Social Icons *************/
+.w357_social {
+}
+.w357_social_icon {
+	margin-right: 20px;
+}
+
+/************* Screenshots of fields *************/
+.w357_screenshot_modal {
+	 margin-top: 15px;
+}
+.w357_screenshot_modal_free {
+	position: relative;
+	top: -40px;
+	left: 220px;
+}

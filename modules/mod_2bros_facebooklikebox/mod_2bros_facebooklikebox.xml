@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>2Bros Facebook Like Box</name>
+	<author>Ted Lowe</author>
+	<creationDate>October, 2013</creationDate>
+	<copyright>Copyright - Social Widgets</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@2brothers.co.nz</authorEmail>
+	<authorUrl>http://2brothers.co.nz/joomla/</authorUrl>
+	<version>1.0</version>
+	<description>Thanks for installing 2Bros Facebook Like Box</description> 
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_2bros_facebooklikebox">mod_2bros_facebooklikebox.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_2bros_facebooklikebox.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="pageURL"
+					type="text"
+					default="https://www.facebook.com/facebook"
+					label="Facebook Page URL" 
+					description="Facebook Page URL Link will be here" />
+				<field
+					name="width"
+					type="text"
+					default="292"
+					label="Width"
+					description="Width of your module" />
+				<field
+					name="height"
+					type="text"
+					default="320"
+					label="Height"
+					description="Height of your module" />
+				
+				<field
+					name="showFaces"
+					type="list"
+					default="true"
+					label="Show Faces"
+					description="Show Faces - Yes or No">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				<field
+					name="header"
+					type="list"
+					default="false"
+					label="Hide Cover"
+					description="Hide Cover - Yes or No">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				<field
+					name="streams"
+					type="list"
+					default="false"
+					label="Show Streams"
+					description="Show Streams - Yes or No">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				<field
+					name="support"
+					type="text"
+					default="1"
+					label="Support Author"
+					description="1(Yes)/0(No) - We expect you will support us so we can deploy more awesome free joomla extensions" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="Module Suffix"
+					description="Module Suffix" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

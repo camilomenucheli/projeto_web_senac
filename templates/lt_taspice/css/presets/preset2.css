@@ -1,0 +1,193 @@
+a {
+  color: #F2D388;
+}
+a:hover {
+  color: #2f3475;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
+  background: #F2D388;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active>a {
+  color: #F2D388;
+}
+#offcanvas-toggler >i {
+  color: #000000;
+}
+#offcanvas-toggler >i:hover {
+  color: #F2D388;
+}
+.btn-primary,
+.sppb-btn-primary {
+  border-color: #343a84;
+  background-color: #F2D388;
+}
+.btn-primary:hover,
+.sppb-btn-primary:hover {
+  border-color: #272c63;
+  background-color: #2f3475;
+}
+ul.social-icons >li a:hover {
+  color: #F2D388;
+}
+.sp-page-title {
+  background: #F2D388;
+}
+.layout-boxed .body-innerwrapper {
+  background: #ffffff;
+}
+.sp-module ul >li >a {
+  color: #000000;
+}
+.sp-module ul >li >a:hover {
+  color: #F2D388;
+}
+.sp-module .latestnews >div >a {
+  color: #000000;
+}
+.sp-module .latestnews >div >a:hover {
+  color: #F2D388;
+}
+.sp-module .tagscloud .tag-name:hover {
+  background: #F2D388;
+}
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
+  background: #F2D388;
+}
+.search .btn-toolbar button {
+  background: #F2D388;
+}
+.post-format {
+  background: #F2D388;
+}
+.voting-symbol span.star.active:before {
+  color: #F2D388;
+}
+.sp-rating span.star:hover:before,
+.sp-rating span.star:hover ~ span.star:before {
+  color: #2f3475;
+}
+.entry-link,
+.entry-quote {
+  background: #F2D388;
+}
+blockquote {
+  border-color: #F2D388;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+  background: #F2D388;
+}
+#sp-footer {
+  background: #F2D388;
+}
+.sp-comingsoon body {
+  background-color: #F2D388;
+}
+.pagination>li>a,
+.pagination>li>span {
+  color: #000000;
+}
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus {
+  color: #000000;
+}
+.pagination>.active>a,
+.pagination>.active>span {
+  border-color: #F2D388;
+  background-color: #F2D388;
+}
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:hover,
+.pagination>.active>span:focus {
+  border-color: #F2D388;
+  background-color: #F2D388;
+}
+/***** PRESET *****/
+.lt-contact-us-item h5,
+.lt-contact-us-item i,
+.lt-banner-item h5 strong,
+.lt-banner-adv-content h2 strong,
+.lt-service-item i,
+.lt-service-item h5,
+.lt-pricing .sppb-row>div h6 strong,
+#lt-slider .ltlargeboldwhite strong, 
+.isotope-item:hover h4 a,
+.lt-our-value-item:hover h5,
+.lt-our-value-item span,
+.lt-about-us-item:hover h5,
+#lt-intro .sppb-row>div:nth-child(2n) span,
+.lt-capabili-item:hover h4,
+.lt-event-content h1,
+.lt-event-content h2,
+.lt-feature-content-center em,
+.lt-services-item:hover h4,
+.lt-contact-first-item i,
+.lt-get-quote-left p strong,
+.lt-about-second-item:hover h4,
+.lt-introduction .lt-intro-sub:hover h3,
+.lt-banner-content .sppb-addon-title,
+.lt-service-item:hover h3,
+.lt-sub-team h4,
+.lt-history-sub .lt-history-item:hover h3,
+.lt-statistic i {
+    color: #F2D388!important;
+}
+.addtocart-button,
+.vm-button-correct,
+#lt-testimonial,
+.productdetails form span.addtocart-button input.addtocart-button,
+.lt-banner-adv-button:hover,
+.sp-megamenu-parent > li.active > a, 
+.sp-megamenu-parent > li:hover > a,
+.lt-get-now-contact form .button,
+.lt-service-item:hover,
+.lt-service-title .button,
+.progress-bar-sept,
+#lt-slider .tp-button,
+.lt-mobi-item:hover span i,
+.lt-team-bottom-button,
+#lt-intro .sppb-row>div:nth-child(2n+1),
+.lt-promod-right ul em,
+.lt-team-member-social,
+.lt-feature-item:hover i,
+#lt-blog .moduleItemReadMore:hover,
+.lt-get-quote-button,
+.lt-team-bottom-button:hover,
+.lt-services-item:hover em,
+.lt-our-skill .lt-skill-sub p .expand,
+.lt-introduction .lt-intro-sub i,
+.lt-button:hover,
+.lt-history-sub .lt-history-item:hover i {
+    background: #F2D388!important;
+}
+.lt-check-out-content a:hover,
+.blogDate {
+    background: #F2D388;
+}
+.lt-slider .lt-button:hover,
+.lt-button:hover {
+    border: 3px solid #F2D388!important;
+}
+.addtocart-button,
+.vm-button-correct,
+.productdetails form span.addtocart-button input.addtocart-button,
+.lt-pricing .sppb-row > div:hover > div,
+.lt-our-value-item span,
+.lt-our-value-item span:hover,
+#lt-slider .tp-button:hover,
+.lt-event-button,
+#lt-slider .lt-button:hover,
+#lt-testimonial #border-title img:hover,
+.lt-services-item:hover em {
+    border-color: #F2D388!important;
+}
+.projects-filter a.selected, .projects-filter a.selected:hover {
+    background: #F2D388;
+}
+.projects-wrapper .project-img:hover .project-img-extra {
+    background: rgba(61, 68, 154, .7)!important;
+}
